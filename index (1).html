@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eunice Cabalo — Web Development &amp; Technical Support</title>
+<meta name="description" content="Eunice Loren Cabalo — Web development, database engineering, and technical support. CS student at Laguna University, available for freelance.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#hero" class="nav__brand">~/eunice_cabalo.dev</a>
+  <span class="nav__status"><span class="dot"></span>Available for freelance work</span>
+  <nav class="nav__links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#workspace">Workspace Help</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="mailto:eunicecabalo.official@gmail.com" class="btn btn--sm btn--primary nav__cta">Email me</a>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__copy">
+      <p class="eyebrow">Web Development &amp; Technical Support</p>
+      <h1>Eunice Loren Cabalo</h1>
+      <p class="hero__lede">
+        I build and fix web and mobile systems, then document them well
+        enough that someone else could pick them up without asking me
+        questions.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View my projects</a>
+        <a href="Cabalo_Resume_WebDev_2026.pdf" class="btn btn--ghost" download>Download resume</a>
+        <a href="mailto:eunicecabalo.official@gmail.com" class="btn btn--ghost">Contact me</a>
+        <button class="btn btn--ghost" id="copyEmailBtn" data-email="eunicecabalo.official@gmail.com">Copy email</button>
+      </div>
+      <div class="chips">
+        <div class="chip"><span class="chip__label">Focus</span>Databases &amp; web security</div>
+        <div class="chip"><span class="chip__label">Status</span>Freelance ready</div>
+        <div class="chip"><span class="chip__label">Location</span>Laguna, PH — overlaps US ET</div>
+      </div>
+    </div>
+
+    <div class="terminal">
+      <div class="terminal__bar">
+        <span class="terminal__dot terminal__dot--r"></span>
+        <span class="terminal__dot terminal__dot--y"></span>
+        <span class="terminal__dot terminal__dot--g"></span>
+        <span class="terminal__title">zsh — eunice@laguna</span>
+      </div>
+      <div class="terminal__body" id="terminalBody" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <p class="eyebrow eyebrow--center">01 — About</p>
+    <h2 class="section__title">What I care about</h2>
+    <p class="section__lede">
+      A short list of the habits behind how I build things, based on what
+      I've actually done, not a values statement.
+    </p>
+
+    <div class="grid grid--4">
+      <div class="card">
+        <p class="card__num">01</p>
+        <h3>Clean, readable code</h3>
+        <p>Meaningful names, consistent formatting, no clever tricks that
+          need a comment to explain themselves.</p>
+      </div>
+      <div class="card">
+        <p class="card__num">02</p>
+        <h3>The simple fix first</h3>
+        <p>Solve the actual problem before reaching for a framework or
+          pattern that isn't needed yet.</p>
+      </div>
+      <div class="card">
+        <p class="card__num">03</p>
+        <h3>Data integrity</h3>
+        <p>Prepared statements, transactions, and validated input — so a
+          failure doesn't leave half-saved data behind.</p>
+      </div>
+    <div class="card">
+        <p class="card__num">04</p>
+        <h3>Documentation that holds up</h3>
+        <p>Schemas, READMEs, and setup steps written clearly enough that
+          someone else could run the project without asking me first.
+        </p>
+    </div>
+    </div>
+
+    <div class="contact__info" style="margin-top:24px;">
+      <h3>Education</h3>
+      <ul class="contact__list">
+        <li><span>Institution</span>Laguna University</li>
+        <li><span>Program</span>BS Computer Science</li>
+        <li><span>Track</span>Data Science</li>
+        <li><span>Expected graduation</span>2028</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <p class="eyebrow eyebrow--center">02 — Skills</p>
+    <h2 class="section__title">Toolset</h2>
+    <p class="section__lede">
+      Grouped by what I actually use, not a progress-bar guess at
+      proficiency.
+    </p>
+
+    <div class="grid grid--4">
+      <div class="card card--skill">
+        <h3>Web</h3>
+        <ul class="tags">
+          <li>HTML</li><li>CSS</li><li>PHP</li><li>MySQL</li>
+          <li class="tag--muted">JavaScript (in progress)</li>
+        </ul>
+      </div>
+      <div class="card card--skill">
+        <h3>Mobile &amp; backend</h3>
+        <ul class="tags">
+          <li>Flutter</li><li>Dart</li><li>Firebase Auth</li>
+          <li>Firestore</li><li>Cloud Messaging</li>
+        </ul>
+      </div>
+      <div class="card card--skill">
+        <h3>Programming</h3>
+        <ul class="tags">
+          <li>Python</li><li>C#</li><li>C++</li><li>C</li>
+        </ul>
+      </div>
+      <div class="card card--skill">
+        <h3>Tools &amp; workflow</h3>
+        <ul class="tags">
+          <li>Git &amp; GitHub</li><li>XAMPP</li><li>phpMyAdmin</li>
+          <li>Google Workspace</li><li>Canva</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <p class="eyebrow eyebrow--center">03 — Selected projects</p>
+    <h2 class="section__title">Real fixes, real systems</h2>
+    <p class="section__lede">
+      Two projects where I took something to completion and can explain
+      every decision in it.
+    </p>
+
+    <article class="project">
+      <div class="project__head">
+        <span class="badge badge--rebuild">Solo rebuild</span>
+        <span class="project__stack">PHP · MySQL · HTML · CSS</span>
+      </div>
+      <h3>SoftCart</h3>
+      <p class="project__sub">Security- and database-focused rebuild of a university e-commerce project</p>
+      <p>
+        Originally built with a university group. I went back into it on
+        my own afterward and found three real problems worth fixing —
+        the kind of review I'd want done on any client's site before it
+        goes live.
+      </p>
+      <div class="grid grid--4 grid--tight">
+        <div class="metric">
+          <span class="metric__label">Transaction safety</span>
+          Checkout now runs as one database transaction with automatic
+          rollback if any item fails stock validation.
+        </div>
+        <div class="metric">
+          <span class="metric__label">Pricing consistency</span>
+          Removed a bug where the storefront and checkout calculated
+          discounts two different ways.
+        </div>
+        <div class="metric">
+          <span class="metric__label">SQLi prevention</span>
+          Replaced string-built queries with <code>mysqli</code> prepared
+          statements across login, cart, and checkout.
+        </div>
+        <div class="metric">
+          <span class="metric__label">DB documentation</span>
+          Reproducible SQL scripts and an ERD, so the schema can be
+          rebuilt from nothing.
+        </div>
+      </div>
+      <div class="steps">
+        <div class="steps__item"><span>01</span>Problem</div>
+        <div class="steps__item"><span>02</span>Investigate</div>
+        <div class="steps__item"><span>03</span>Fix</div>
+        <div class="steps__item"><span>04</span>Document</div>
+      </div>
+      <a href="https://github.com/eunicecabs/softcart-ecommerce" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+
+    <article class="project">
+      <div class="project__head">
+        <span class="badge badge--mobile">Mobile app · Real client</span>
+        <span class="project__stack">Flutter · Dart · Firebase</span>
+      </div>
+      <h3>ChurchMate</h3>
+      <p class="project__sub">Church management app for Our Daily Bread Presbyterian Church – Dayap</p>
+      <p>
+        Built with one teammate over about two months. I designed and
+        built the entire frontend across all three modules; my teammate
+        handled the Firebase backend.
+      </p>
+      <div class="grid grid--4 grid--tight">
+        <div class="metric">
+          <span class="metric__label">QR event check-in</span>
+          Attendance logging that works end-to-end, from code generation
+          through a logged record.
+        </div>
+        <div class="metric">
+          <span class="metric__label">Library module</span>
+          Book catalog, borrowing, and reservation tracking.
+        </div>
+        <div class="metric">
+          <span class="metric__label">Finance module</span>
+          Donation and expense recording with a running budget balance.
+        </div>
+        <div class="metric">
+          <span class="metric__label">Role-based views</span>
+          Separate permissions for Youth Leaders and Youth Members.
+        </div>
+      </div>
+      <a href="https://github.com/eunicecabs/churchmate" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+  </section>
+
+  <!-- HOW I WORK -->
+  <section class="section" id="how">
+    <p class="eyebrow eyebrow--center">04 — Process</p>
+    <h2 class="section__title">How I work</h2>
+    <p class="section__lede">Whether it's a database bug or a messy Drive, I follow the same four stages.</p>
+    <div class="grid grid--4">
+      <div class="card">
+        <p class="card__num">01</p>
+        <h3>Understand</h3>
+        <p>Read the existing code or system first, and confirm what the
+          actual requirement is before changing anything.</p>
+      </div>
+      <div class="card">
+        <p class="card__num">02</p>
+        <h3>Build</h3>
+        <p>Implement the straightforward version — clean structure, no
+          dependencies the project doesn't need.</p>
+      </div>
+      <div class="card">
+        <p class="card__num">03</p>
+        <h3>Test</h3>
+        <p>Check the edge cases on purpose: what happens when stock runs
+          out, a field is empty, or the network drops mid-request.</p>
+      </div>
+      <div class="card">
+        <p class="card__num">04</p>
+        <h3>Document</h3>
+        <p>Write the README and setup steps so the next person — or
+          future me — isn't guessing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKSPACE / VA SERVICES -->
+  <section class="section section--panel" id="workspace">
+    <p class="eyebrow">Technical support &amp; workspace organization</p>
+    <h2 class="section__title">Need your digital workspace under control?</h2>
+    <p class="section__lede">
+      Alongside development work, I help solo founders and small teams
+      organize their Google Workspace — folder structures, naming
+      conventions, and basic technical troubleshooting.
+    </p>
+    <div class="grid grid--3">
+      <div class="card card--sm"><h3>Google Workspace organization</h3><p>Folder structures, shared drive setup, and access control.</p></div>
+      <div class="card card--sm"><h3>Naming conventions</h3><p>Consistent file naming so anyone on the team can find what they need.</p></div>
+      <div class="card card--sm"><h3>Client onboarding templates</h3><p>Reusable intake forms, folder templates, and checklists.</p></div>
+      <div class="card card--sm"><h3>Website troubleshooting</h3><p>Fixing layout bugs, broken links, and small CSS issues.</p></div>
+      <div class="card card--sm"><h3>Basic tech support</h3><p>Software setup, database connection issues, sync problems.</p></div>
+      <div class="card card--sm"><h3>SOPs &amp; documentation</h3><p>Step-by-step guides so a task doesn't rely on one person's memory.</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <p class="eyebrow eyebrow--center">05 — Contact</p>
+    <h2 class="section__title">Have a project or a technical problem?</h2>
+    <p class="section__lede">
+      Currently open to freelance clients and web development projects.
+    </p>
+
+    <div class="contact">
+      <div class="contact__info">
+        <h3>Reach me directly</h3>
+        <ul class="contact__list">
+          <li><span>Location</span>Laguna, Philippines</li>
+          <li><span>Hours</span>9 PM–5 AM PHT — overlaps US Eastern business hours</li>
+          <li><span>Email</span><a href="mailto:eunicecabalo.official@gmail.com">eunicecabalo.official@gmail.com</a></li>
+          <li><span>GitHub</span><a href="https://github.com/eunicecabs" target="_blank" rel="noopener">github.com/eunicecabs</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/eunicecabalo/" target="_blank" rel="noopener">linkedin.com/in/eunicecabalo</a></li>
+        </ul>
+      </div>
+
+      <form class="contact__form" id="contactForm" action="mailto:eunicecabalo.official@gmail.com" method="post" enctype="text/plain">
+        <label>Full name
+          <input type="text" name="name" required>
+        </label>
+        <label>Email address
+          <input type="email" name="email" required>
+        </label>
+        <label>What can I help with?
+          <input type="text" name="subject" placeholder="Web development, database fix, workspace setup…">
+        </label>
+        <label>Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">Send message</button>
+        <p class="contact__note">Opens your email app with this pre-filled. Replies usually within a day.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>eunice_cabalo.dev</span>
+  <span>Built with HTML, CSS, and vanilla JavaScript.</span>
+  <a href="#hero" class="footer__top">Back to top</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
